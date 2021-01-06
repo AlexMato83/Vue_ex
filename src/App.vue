@@ -1,4 +1,5 @@
 <template>
+
   <v-app>
     <v-app-bar
       app
@@ -6,6 +7,8 @@
       dark
     >
       <div class="d-flex align-center">
+              
+
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -38,6 +41,9 @@
     </v-app-bar>
 
     <v-main>
+      <mio-primo-componente></mio-primo-componente>
+      <mio-primo-componente></mio-primo-componente>
+      <mio-primo-componente></mio-primo-componente>
       <HelloWorld/>
     </v-main>
   </v-app>
@@ -45,12 +51,15 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import MioPrimoComponente from './components/MioPrimoComponente.vue';
 
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
+    MioPrimoComponente
+    
   },
 
   data: () => ({
